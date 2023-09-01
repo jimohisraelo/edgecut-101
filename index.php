@@ -34,6 +34,30 @@
     <link href="css/responsive.css" rel="stylesheet" />
   </head>
 
+ <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Check connection
+if ($conn) {
+  $d = "Connection To Database Is Successful";
+} else {
+  $d = "Connection Failed";
+}
+
+
+$colors = array("red", "green", "blue", "yellow", "black", 79, 25);
+
+foreach ($colors as $value) {
+echo "$value <br>";
+}
+
+?> 
+
   <body>
     <div class="hero_area">
       <!-- header section strats -->
@@ -60,7 +84,7 @@
             >
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html"
+                  <a class="nav-link" href="index.php"
                     >Home <span class="sr-only">(current)</span></a
                   >
                 </li>
@@ -103,8 +127,7 @@
                   <div class="col-md-5">
                     <div class="detail-box">
                       <h1>
-                        For All Your <br />
-                        Furniture Needs
+                        <?php print $d?>
                       </h1>
                       <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -379,6 +402,38 @@
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Mollitia nemo dolore molestias assumenda, repellat minus
                   laudantium suscipit ipsam
+                </p>
+                <a href=""> Read More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/b2.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>Anything embarrassing hidden in the middle</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae aut voluptatibus aspernatur a? Iure harum
+                  aspernatur perspiciatis dolorum cum
+                </p>
+                <a href=""> Read More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/b2.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>Anything embarrassing hidden in the middle</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae aut voluptatibus aspernatur a? Iure harum
+                  aspernatur perspiciatis dolorum cum
                 </p>
                 <a href=""> Read More </a>
               </div>
