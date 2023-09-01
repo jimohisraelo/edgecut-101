@@ -14,6 +14,16 @@
   <meta name="author" content="" />
 
   <title>Edgecut COntact Page</title>
+  <?php 
+  $host = "localhost";
+  $username = "root";
+  $pasword = "Oluwaseun1";
+
+  $conn = mysqli_connect($servername, $username, $password);
+  if($conn){
+    echo "<h1> Welcome to my page</h1>";
+  }
+  ?>
 
 
   <!-- bootstrap core css -->

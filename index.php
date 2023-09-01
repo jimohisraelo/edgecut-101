@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!-- Basic -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Mobile Metas -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Site Metas -->
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <meta name="keywords" content="" />
@@ -21,10 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
     <!-- fonts style -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
 
     <!-- font awesome style -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -32,9 +27,9 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
-  </head>
+</head>
 
- <?php
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -53,270 +48,256 @@ if ($conn) {
 $colors = array("red", "green", "blue", "yellow", "black", 79, 25);
 
 foreach ($colors as $value) {
-echo "$value <br>";
+  echo "$value <br>";
 }
 
-?> 
+?>
 
-  <body>
+<body>
     <div class="hero_area">
-      <!-- header section strats -->
-      <header class="header_section long_section px-0">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <span> Edgecut </span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div
-              class="d-flex mx-auto flex-column flex-lg-row align-items-center"
-            >
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.php"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="furniture.html">Furnitures</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div class="quote_btn-container">
-              <a href="">
-                <span> Login </span>
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
-              <form class="form-inline">
-                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
+        <!-- header section strats -->
+        <header class="header_section long_section px-0">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand" href="index.html">
+                    <span> Edgecut </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class=""> </span>
                 </button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <!-- end header section -->
-      <!-- slider section -->
-      <section class="slider_section long_section">
-        <div id="customCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="detail-box">
-                      <h1>
-                        <?php print $d?>
-                      </h1>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Minus quidem maiores perspiciatis, illo maxime
-                        voluptatem a itaque suscipit.
-                      </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1"> Contact Us </a>
-                        <a href="" class="btn2"> About Us </a>
-                      </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"> About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="furniture.html">Furnitures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="img-box">
-                      <img src="images/slider-img.png" alt="" />
+                    <div class="quote_btn-container">
+                        <a href="">
+                            <span> Login </span>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </a>
+                        <form class="form-inline">
+                            <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="detail-box">
-                      <h1>
-                        For All Your <br />
-                        Furniture Needs
-                      </h1>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Minus quidem maiores perspiciatis, illo maxime
-                        voluptatem a itaque suscipit.
-                      </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1"> Contact Us </a>
-                        <a href="" class="btn2"> About Us </a>
-                      </div>
+            </nav>
+        </header>
+        <!-- end header section -->
+        <!-- slider section -->
+        <section class="slider_section long_section">
+            <div id="customCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="detail-box">
+                                        <h1>
+                                            <?php print $d ?>
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Minus quidem maiores perspiciatis, illo maxime
+                                            voluptatem a itaque suscipit.
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="" class="btn1"> Contact Us </a>
+                                            <a href="" class="btn2"> About Us </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="img-box">
+                                        <img src="images/slider-img.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="img-box">
-                      <img src="images/slider-img.png" alt="" />
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="detail-box">
+                                        <h1>
+                                            For All Your <br />
+                                            Furniture Needs
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Minus quidem maiores perspiciatis, illo maxime
+                                            voluptatem a itaque suscipit.
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="" class="btn1"> Contact Us </a>
+                                            <a href="" class="btn2"> About Us </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="img-box">
+                                        <img src="images/slider-img.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="detail-box">
+                                        <h1>
+                                            For All Your <br />
+                                            Furniture Needs
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Minus quidem maiores perspiciatis, illo maxime
+                                            voluptatem a itaque suscipit.
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="" class="btn1"> Contact Us </a>
+                                            <a href="" class="btn2"> About Us </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="img-box">
+                                        <img src="images/slider-img.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#customCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#customCarousel" data-slide-to="1"></li>
+                    <li data-target="#customCarousel" data-slide-to="2"></li>
+                </ol>
             </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="detail-box">
-                      <h1>
-                        For All Your <br />
-                        Furniture Needs
-                      </h1>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Minus quidem maiores perspiciatis, illo maxime
-                        voluptatem a itaque suscipit.
-                      </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1"> Contact Us </a>
-                        <a href="" class="btn2"> About Us </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="img-box">
-                      <img src="images/slider-img.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <ol class="carousel-indicators">
-            <li
-              data-target="#customCarousel"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#customCarousel" data-slide-to="1"></li>
-            <li data-target="#customCarousel" data-slide-to="2"></li>
-          </ol>
-        </div>
-      </section>
-      <!-- end slider section -->
+        </section>
+        <!-- end slider section -->
     </div>
 
     <!-- furniture section -->
 
     <section class="furniture_section layout_padding">
-      <div class="container">
-        <div class="heading_container">
-          <h2>Our Furniture</h2>
-          <p>
-            which don't look even slightly believable. If you are going to use a
-            passage of Lorem Ipsum, you need to be sure there isn't an
-          </p>
+        <div class="container">
+            <div class="heading_container">
+                <h2>Our Furniture</h2>
+                <p>
+                    which don't look even slightly believable. If you are going to use a
+                    passage of Lorem Ipsum, you need to be sure there isn't an
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/f1.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                            <h5>brown Chair Design</h5>
+                            <div class="price_box">
+                                <h6 class="price_heading"><span>$</span> 100.00</h6>
+                                <a href=""> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/f2.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                            <h5>Double Bed Design</h5>
+                            <div class="price_box">
+                                <h6 class="price_heading"><span>$</span> 200.00</h6>
+                                <a href=""> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/f3.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                            <h5>House Chair Design</h5>
+                            <div class="price_box">
+                                <h6 class="price_heading"><span>$</span> 200.00</h6>
+                                <a href=""> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/f4.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                            <h5>brown Table Design</h5>
+                            <div class="price_box">
+                                <h6 class="price_heading"><span>$</span> 100.00</h6>
+                                <a href=""> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/f5.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                            <h5>Blue Chair Design</h5>
+                            <div class="price_box">
+                                <h6 class="price_heading"><span>$</span> 200.00</h6>
+                                <a href=""> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/f6.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                            <h5>Brown Table Design</h5>
+                            <div class="price_box">
+                                <h6 class="price_heading"><span>$</span> 200.00</h6>
+                                <a href=""> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/f1.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>brown Chair Design</h5>
-                <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 100.00</h6>
-                  <a href=""> Buy Now </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/f2.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Double Bed Design</h5>
-                <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 200.00</h6>
-                  <a href=""> Buy Now </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/f3.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>House Chair Design</h5>
-                <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 200.00</h6>
-                  <a href=""> Buy Now </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/f4.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>brown Table Design</h5>
-                <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 100.00</h6>
-                  <a href=""> Buy Now </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/f5.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Blue Chair Design</h5>
-                <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 200.00</h6>
-                  <a href=""> Buy Now </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/f6.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Brown Table Design</h5>
-                <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 200.00</h6>
-                  <a href=""> Buy Now </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- end furniture section -->
@@ -324,29 +305,29 @@ echo "$value <br>";
     <!-- start of about section -->
 
     <section class="about_section layout_padding long_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/about-img.png" alt="" />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-box">
+                        <img src="images/about-img.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>About Us</h2>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Eveniet eaque delectus fuga, voluptas consequuntur cum ipsam aut
+                            optio ducimus a ab enim error deserunt, velit quidem suscipit
+                            saepe corporis fugit?
+                        </p>
+                        <a href=""> Read More </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>About Us</h2>
-              </div>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet eaque delectus fuga, voluptas consequuntur cum ipsam aut
-                optio ducimus a ab enim error deserunt, velit quidem suscipit
-                saepe corporis fugit?
-              </p>
-              <a href=""> Read More </a>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- end of about section -->
@@ -354,27 +335,68 @@ echo "$value <br>";
     <!-- blog section -->
 
     <section class="blog_section layout_padding">
-      <div class="container">
-        <div class="heading_container">
-          <h3>Latest Blog</h3>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/b1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Look even slightly believable. If you are</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                  est nesciunt quos consequuntur hic ducimus cum, dolor eligendi
-                  nulla
-                </p>
-                <a href=""> Read More </a>
-              </div>
+        <div class="container">
+            <div class="heading_container">
+                <h3>Latest Blog</h3>
             </div>
-          </div>
+            <?php
+      $myArray = [
+        [
+          "topic" => "Welcome",
+          "img" => "images/b2.jpg",
+          "desc" => " Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Mollitia nemo dolore molestias assumenda, repellat minus
+                  laudantium suscipit ipsam",
+        ],
+        [
+          "topic" => "Welcome",
+          "img" => "images/b2.jpg",
+          "desc" => " Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Mollitia nemo dolore molestias assumenda, repellat minus
+                  laudantium suscipit ipsam",
+        ],
+        [
+          "topic" => "Welcome",
+          "img" => "images/b2.jpg",
+          "desc" => " Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Mollitia nemo dolore molestias assumenda, repellat minus
+                  laudantium suscipit ipsam",
+        ],
+        [
+          "topic" => "Welcome",
+          "img" => "images/b2.jpg",
+          "desc" => " Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Mollitia nemo dolore molestias assumenda, repellat minus
+                  laudantium suscipit ipsam",
+        ],
+        [
+          "topic" => "Welcome",
+          "img" => "images/b2.jpg",
+          "desc" => " Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Mollitia nemo dolore molestias assumenda, repellat minus
+                  laudantium suscipit ipsam",
+        ],
+      ];
+      ?>
+
+            <div class="row">
+                <?php foreach ($myArray as $arr) { ?>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="<?= $arr["img"] ?>" alt="" />
+                        </div>
+                        <div class="detail-box">
+                            <h5><?= $arr["topic"] ?></h5>
+                            <p>
+                                <?= $arr["desc"] ?>
+                            </p>
+                            <a href=""> Read More </a>
+                        </div>
+                    </div>
+                </div>
+                <?php } ?>
+                <!--
           <div class="col-md-6 col-lg-4">
             <div class="box">
               <div class="img-box">
@@ -438,20 +460,20 @@ echo "$value <br>";
                 <a href=""> Read More </a>
               </div>
             </div>
-          </div>
+          </div> -->
+            </div>
         </div>
-      </div>
     </section>
     <!-- end of blog section -->
 
     <!-- footer section -->
     <footer class="footer_section">
-      <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
-        </p>
-      </div>
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By
+                <a href="https://html.design/">Free Html Templates</a>
+            </p>
+        </div>
     </footer>
     <!-- footer section -->
 
@@ -462,7 +484,9 @@ echo "$value <br>";
     <!-- custom js -->
     <script src="js/custom.js"></script>
     <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
     <!-- End Google Map -->
-  </body>
+</body>
+
 </html>
